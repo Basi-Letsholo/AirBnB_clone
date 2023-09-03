@@ -1,0 +1,89 @@
+.filters {
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.locations,
+.amenities {
+    height: 100%;
+    width: 25%;
+    border-right: 1px solid #DDDDDD;
+    margin:auto auto;
+    position: relative;
+}
+
+.locations h3,
+.amenities h3 {
+    font-weight: 600;
+}
+
+.locations h4,
+.amenities h4 {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.popover{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left:0;
+    width: 100%;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    padding:10px;
+    list-style-type: none;
+    margin: 0;
+}
+
+.locations ul,
+.amenities ul {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.locations ul h2 {
+    font-size: 16px;
+}
+
+.locations ul li {
+    margin-bottom: 5px;
+}
+
+.locations:hover .popover,
+.amenities:hover .popover {
+    display: block;
+}
+
+.buttons {
+    font-size: 18px;
+    background-color: #FF5A5F;
+    color: #FFFFFF;
+    display: flex;
+    height: 48px;
+    width: 20%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+}
+
+.buttons:hover {
+    opacity: 0.9;
+}
